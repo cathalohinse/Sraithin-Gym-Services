@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="ui raised segment">
+    <b><div class="ui five column grid">
+    <meta charset="UTF-8">
+    <div class="column">
+        <div class="ui segment">
+            <i class="user huge icon"></i>
+            <br>{{member.name}}
+        </div>
+    </div>
+        <div class="column">
+          <div class="ui segment">
+            {{#if idealBodyWeight}}
+            <i class="clock huge green icon"></i>
+            <br>Ideal Body Weight
+            {{else}}
+            <i class="clock huge red icon"></i>
+            <br>Not at the Ideal Body Weight
+            {{/if}}
+          </div>
+        </div>
+    <div class="column">
+        <div class="ui segment">
+            <i class="heartbeat huge icon"></i>
+            <span class="ui huge black text">{{BMI}}</span>
+            <br>BMI
+        </div>
+    </div>
+        <div class="column">
+            <div class="ui segment">
+                <i class="ambulance huge icon"></i>
+                <br>{{BMICategory}}
+            </div>
+        </div>
+      <div class="column">
+        <div class="ui segment">
+            <i class="bullseye huge icon"></i>
+            <br>To lose weight, and get an A+ in ICT Skills 1.
+        </div>
+    </div>
+    </div>
+    </b>
+</div>
+</html>
