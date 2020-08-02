@@ -1,0 +1,54 @@
+{{> membermenu id= "settings"}}
+
+<h1>Settings</h1>
+<div class="ui two column grid basic middle aligned segment">
+  <section class="column">
+    <form class="ui stacked segment form" action="/member/updatemember/{{member.id}}" method="POST">
+      <h3 class="ui header">{{member.name}}</h3>  
+      <h3 class="ui header">Account Details</h3>
+      <div class="field">
+        <label>Full Name</label>
+        <input placeholder="{{member.name}}" type="text" name="name">
+      </div>
+      <div class="field">
+        <label>Email</label>
+        <input placeholder="{{member.email}}" type="text" name="email">
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input placeholder="{{member.password}}" type="password" name="password">
+      </div>
+      <div class="field">
+        <label>Address</label>
+        <input placeholder="{{member.address}}" type="text" name="address">
+      </div>
+      <div class="field">
+        <label>Gender</label>
+        <input placeholder="{{member.gender}}" type="text" name="gender">
+      </div>
+      <div class="field">
+        <label>Height</label>
+        <input placeholder="{{member.height}}" type="number" name="height">
+      </div>
+      <div class="field">
+        <label>Weight</label>
+        <input placeholder="{{member.startWeight}}" type="number" name="startWeight">
+      </div>
+      <button class="ui blue submit button">Update</button>
+    </form>
+  </section>
+  <section class="column">
+    <img class="ui image" src="https://cdn.glitch.com/17bb1a79-de82-4fa8-a3fd-6cd5d2fb02c9%2Frock.jpg?v=1595781366318">
+    <figcaption><i>"I really enjoyed the pilates classes at Sraithín Gym Services"</i><br>-The Rock</figcaption>
+    <h3 class="ui header">Account Details</h3>
+    <ul>
+      <li>Full Name: {{member.name}}</li>
+      <li>Email: {{member.email}}</li>
+      <li>Password: {{member.password}}</li>
+      <li>Address: {{member.address}}</li>
+      <li>Gender: {{member.gender}}</li>
+      <li>Height: {{member.height}}</li>
+      <li>Weight: {{member.startWeight}}</li>
+    </ul>
+  </section>
+</div>

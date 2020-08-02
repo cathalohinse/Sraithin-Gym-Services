@@ -1,0 +1,40 @@
+<table class="ui celled table">
+  <thead class = "single line">
+    <tr>
+      <th>Date</th>
+      <th>Weight</th>
+      <th>Chest</th>
+      <th>Thigh</th>
+      <th>Upper Arm</th>
+      <th>Waist</th>
+      <th>Hips</th>
+      <th>Trend</th>
+      <th>Feedback</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each assessments}}
+    <tr>
+      <td>{{date}}</td>
+      <td>{{weight}}</td>
+      <td>{{chest}}</td>
+      <td>{{thigh}}</td>
+      <td>{{upperArm}}</td>
+      <td>{{waist}}</td>
+      <td>{{hips}}</td>
+      <td>
+        {{#if trend}}
+        <a class="ui teal tag label"></a>
+        Losing Weight
+        {{else}}
+        <a class="ui red tag label"></a>
+        Gaining Weight
+        {{/if}}
+      </td>
+      <td>{{feedback}}</td>
+      <td><a href="/member/deleteAssessment/{{id}}"><i class="big ui trash icon"></i></a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

@@ -1,0 +1,42 @@
+{{> welcomemenu id="signup"}}
+
+<div class="ui two column grid basic middle aligned segment">
+    <section class="column">
+        <form class="ui stacked segment form" action="/register" method="POST">
+            <h3 class="ui header">Register</h3>
+                <div class="field">
+                    <label>Full Name</label>
+                    <input placeholder="Full Name" type="text" name="name">
+                </div>
+            <div class="field">
+                <label>Email</label>
+                <input placeholder="Email" type="text" name="email">
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input type="password" name="password">
+            </div>
+            <div class="field">
+                <label>Address</label>
+                <input placeholder="Address" type="text" name="address">
+            </div>
+            <div class="field">
+                <label>Gender</label>
+                <input placeholder="Gender" type="text" name="gender">
+            </div>
+            <div class="field">
+                <label>Height</label>
+                <input placeholder="Height" type="number" name="height">
+            </div>
+            <div class="field">
+                <label>Starting Weight</label>
+                <input placeholder="Starting Weight" type="number" name="startWeight">
+            </div>
+            <button class="ui blue submit button">Submit</button>
+        </form>
+    </section>
+    <section class="column">
+        <img class="ui image" src="https://cdn.glitch.com/17bb1a79-de82-4fa8-a3fd-6cd5d2fb02c9%2Ffingers.jpg?v=1595705856517">
+        <figcaption><i>"I can now bench press over 200lb, thanks to the fitness classes at Sraithín Gym Services"</i><br>-Fingers</figcaption>
+    </section>
+</div>

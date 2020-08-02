@@ -1,0 +1,44 @@
+{
+  "members": [
+    {
+      "name": "Homer Simpson",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "address": "Springfield",
+      "gender": "Male",
+      "height": "1",
+      "startWeight": "2",
+      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
+    },
+    {
+      "name": "Mary Henchy",
+      "email": "maryhenchy@gmail.com",
+      "password": "q",
+      "address": "Toonagh",
+      "gender": "Female",
+      "height": "2",
+      "startWeight": "9",
+      "id": "11619de0-d278-11ea-9e75-55458a47a8d5"
+    },
+    {
+      "name": "Joe Doolaughty",
+      "email": "cathal.henchy@nelipak.com",
+      "password": "q",
+      "address": "",
+      "gender": "",
+      "height": "165",
+      "startWeight": "1",
+      "id": "a6e3cb50-d420-11ea-a3e5-9d7abd12d0e6"
+    },
+    {
+      "name": "PJ Garvey",
+      "email": "cathalohinse@yahoo.com",
+      "password": "q",
+      "address": "Toonagh",
+      "gender": "Male",
+      "height": "165",
+      "startWeight": "1",
+      "id": "44920f10-d426-11ea-8bf5-551c3bbd48e1"
+    }
+  ]
+}

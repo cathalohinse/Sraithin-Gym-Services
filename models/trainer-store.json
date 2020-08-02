@@ -1,0 +1,16 @@
+{
+  "trainers": [
+    {
+      "id": "1959",
+      "name": "Dan Shanahan",
+      "email": "DantheMan@gmail.com",
+      "password": "q"
+    },
+    {
+      "id": "1948",
+      "name": "John Mullane",
+      "email": "John@gmail.com",
+      "password": "q"
+    }
+  ]
+}

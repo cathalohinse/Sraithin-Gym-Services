@@ -1,0 +1,55 @@
+{{> trainermenu id= "trainermember"}}
+<div class="ui raised segment">
+    <h2 class="ui header">
+      {{member.name}}
+  </h2>
+  <h3>
+    {{member.email}}
+  </h3>
+  {{> dataanalytics}}
+  {{#each assessments}}
+  <div class = "ui raised segment">
+    <section>
+      <table class="ui fixed table">
+        <thead>
+          <tr>
+            <th>Date/Time</th>
+            <th>Weight</th>
+            <th>Chest</th>
+            <th>Thigh</th>
+            <th>Upper Arm</th>
+            <th>Waist</th>
+            <th>Hips</th>
+            <th>Trend</th>
+            <th>Comment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{date}}</td>
+            <td>{{weight}}</td>
+            <td>{{chest}}</td>
+            <td>{{thigh}}</td>
+            <td>{{upperArm}}</td>
+            <td>{{waist}}</td>
+            <td>{{hips}}</td>
+            <td>
+              {{#if trend}}
+              <a class="ui teal tag label"></a>
+              Losing Weight
+              {{else}}
+              <a class="ui red tag label"></a>
+              Gaining Weight
+              {{/if}}
+            </td>
+            <td>{{feedback}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      {{> addcomment}}
+    </section>
+    </div>
+    {{/each}}
+</div>
