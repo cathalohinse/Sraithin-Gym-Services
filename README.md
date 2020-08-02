@@ -1,4 +1,4 @@
-Welcome to the Playlist 4
+ICT Skill 1 Assignment: Sraithín Gym Services
 =========================
 
-Version 4 of the Playlist application
+This began in earnest on Saturday the 25th of July 2020.
