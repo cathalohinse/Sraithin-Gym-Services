@@ -54,6 +54,7 @@ const member = {
       },
     };
     logger.debug("Creating a new assessment", newAssessment);
+    logger.info(`Creating a new assessment ${newAssessment.id} on ${loggedInMember.name}`);
     assessmentStore.addAssessment(newAssessment);
     response.redirect("/dashboard");
   },
@@ -61,6 +62,7 @@ const member = {
   deleteAssessment(request, response) {
     const assessmentId = request.params.id;
     logger.debug(`Deleting assessment ${assessmentId}`);
+    logger.info(`Deleting assessment ${assessmentId}`);
     assessmentStore.removeAssessment(assessmentId);
     response.redirect("/dashboard");
   },
@@ -90,6 +92,7 @@ const member = {
       loggedInMember.startWeight = request.body.startWeight;
     }
     logger.debug("Updating existing member", loggedInMember);
+    logger.info(`Updated ${loggedInMember.name}`);
     memberStore.updateMember(memberId);
     response.redirect("/settings/"+memberId);
   }

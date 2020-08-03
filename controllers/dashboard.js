@@ -8,11 +8,10 @@ const uuid = require("uuid");
 const BMI = require("../utils/bmi.js");
 const BMICategory = require("../utils/bmi-category.js");
 const idealBodyWeight = require("../utils/ideal-body-weight");
-const goal = require("../utils/goal.js");
 
 const dashboard = {
   index(request, response) {
-    logger.info("dashboard rendering");
+    logger.info("dashboard rendering, so it is");
     const memberId = request.params.id;
     const loggedInMember = accounts.getCurrentMember(request);
     const assessmentId = request.params.id;
@@ -23,7 +22,6 @@ const dashboard = {
       BMI: BMI.BMICalculation(loggedInMember.id),
       BMICategory: BMICategory.BMICategory(loggedInMember.id),
       idealBodyWeight: idealBodyWeight.isIdealBodyWeight(loggedInMember.id),
-      goal: goal
     };
     logger.info("about to render", assessmentStore.getAllAssessments());
     response.render("dashboard", viewData);

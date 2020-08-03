@@ -57,21 +57,25 @@ const trainer = {
   
   deleteMember(request, response) {
     const memberId = request.params.id;
+    const memberName = memberStore.getMemberById(memberId).name;
     logger.debug(`Deleting member ${memberId}`);
+    logger.info(`Deleting member ${memberName}`);
     memberStore.removeMember(memberId);
     assessmentStore.removeAllAssessmentsByMember(memberId);
     response.redirect("/trainer/");
   },
   
   addComment(request, response){
-    const assessmentId = request.params.id
-    const memberId = request.params.memberid
+    const assessmentId = request.params.id;
+    const memberId = request.params.memberid;
+    const memberName = memberStore.getMemberById(memberId).name;
     const newComment = {
       id: assessmentId,
       member: memberStore.getMemberByAssessmentId(assessmentId),
       comment: request.body.comment
     };
     logger.debug("Inputting a new comment", newComment.comment);
+    logger.info(`Inputting a new comment on assessment (${assessmentId}) of ${memberName}. The comment is: ${newComment.comment}`);
     assessmentStore.addComment(assessmentId, newComment.comment);
     response.redirect("/trainermember/"+memberId);
   },

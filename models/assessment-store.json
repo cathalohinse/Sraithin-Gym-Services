@@ -244,32 +244,10 @@
       "hips": "2"
     },
     {
-      "id": "20d77ba0-d426-11ea-8bf5-551c3bbd48e1",
-      "memberid": "11619de0-d278-11ea-9e75-55458a47a8d5",
-      "date": "2020-8-1\n19:38:1",
-      "weight": "89",
-      "chest": "1",
-      "thigh": "1",
-      "upperArm": "1",
-      "waist": "1",
-      "hips": "1"
-    },
-    {
       "id": "bedd9860-d4a4-11ea-8ec7-3baa456514e4",
       "memberid": "11619de0-d278-11ea-9e75-55458a47a8d5",
       "date": "2020-8-2\n10:44:23",
       "weight": "67",
-      "chest": "",
-      "thigh": "",
-      "upperArm": "",
-      "waist": "",
-      "hips": ""
-    },
-    {
-      "id": "c0f0c0f0-d4a4-11ea-8ec7-3baa456514e4",
-      "memberid": "11619de0-d278-11ea-9e75-55458a47a8d5",
-      "date": "2020-8-2\n10:44:26",
-      "weight": "88",
       "chest": "",
       "thigh": "",
       "upperArm": "",
@@ -285,7 +263,41 @@
       "thigh": "",
       "upperArm": "",
       "waist": "",
-      "hips": ""
+      "hips": "",
+      "feedback": "Another great comment"
+    },
+    {
+      "id": "90fb1b50-d55a-11ea-8608-498cecf6b332",
+      "memberid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "date": "2020-8-3\n8:25:54",
+      "weight": "70",
+      "chest": "3",
+      "thigh": "3",
+      "upperArm": "3",
+      "waist": "3",
+      "hips": "3"
+    },
+    {
+      "id": "7d665b00-d563-11ea-a193-edd3aadbaa52",
+      "memberid": "11619de0-d278-11ea-9e75-55458a47a8d5",
+      "date": "2020-8-3\n9:29:47",
+      "weight": "89",
+      "chest": "3",
+      "thigh": "3",
+      "upperArm": "3",
+      "waist": "3",
+      "hips": "3"
+    },
+    {
+      "id": "a8b9d110-d563-11ea-a193-edd3aadbaa52",
+      "memberid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "date": "2020-8-3\n9:30:59",
+      "weight": "72.00",
+      "chest": "40.00",
+      "thigh": "23",
+      "upperArm": "29.0",
+      "waist": "28",
+      "hips": "28.0"
     }
   ]
 }
