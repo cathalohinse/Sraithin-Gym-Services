@@ -23,6 +23,7 @@ const accounts = {
   logout(request, response) {
     response.cookie("assessment", "");
     response.redirect("/");
+    logger.info("logging out");
   },
 
   signup(request, response) {
@@ -30,6 +31,7 @@ const accounts = {
       title: "Login to the Service"
     };
     response.render("signup", viewData);
+    logger.info("signing up a new member");
   },
 
   register(request, response) {
